@@ -1,0 +1,105 @@
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 12px;
+    transition: all 0.2s ease-in;
+    font-family: $title-font-family;
+    font-size: 22px;
+    font-weight: 100;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-lg {
+    padding: 20px 24px;
+}
+
+.btn-fw {
+    width: 300px;
+    padding: 20px 24px;
+}
+
+.btn-black {
+    color: white;
+    background: $primary-color;
+
+    &:hover {
+        background: white;
+        color: $primary-color;
+    }
+}
+
+.btn-special {
+    color: white;
+    border-radius: 3px;
+    font-family: $title-font-family;
+    font-weight: 100;
+    padding: 0;
+
+    .btn-tail, .btn-header {
+        display: inline-block;
+        font-size: 12px;
+        font-family: $title-font-family;
+        font-weight: 100;
+        padding: 10px;
+    }
+
+    .btn-header {
+        border-radius: 3px 0 0 3px;
+    }
+
+    .btn-tail {
+        border-radius: 0 3px 3px 0;
+        margin-left: -5px;
+    }
+}
+
+.btn-facebook {
+    .btn-header {
+        background: #1862ab;
+    }
+
+    .btn-tail {
+        background: #1c7cd6;
+    }
+}
+
+.btn-exhibition {
+    .btn-header {
+        background: $primary-color;
+    }
+
+    .btn-tail {
+        background: $primary-light-color;
+    }
+}
+
+.btn-white {
+    color: $primary-color;
+    background: white;
+
+    &:hover {
+        background: $primary-color;
+        color: white;
+    }
+}
+
+.btn-website {
+    .btn-header {
+        background: $secondary-color;
+    }
+
+    .btn-tail {
+        background: lighten($secondary-color, 5%);
+    }
+}
+
+.btn-transparent {
+    border: 3px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+        background: $primary-color;
+        color: white;
+    }
+}

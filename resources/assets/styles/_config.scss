@@ -1,0 +1,20 @@
+$body-font-family: 'Open Sans', sans-serif;
+$title-font-family: 'Lato', sans-serif;
+
+$primary-color: #010102;
+$secondary-color: #dd7373;
+$primary-light-color: #0F1010;
+$body-bg: $primary-color;
+
+$grid-container-width: 1020px;
+$grid-gutter-width: 30px;
+
+$site-type-color: white;
+
+// Media queries
+$media-mobile: "only screen and (max-width: 640px)" !default;
+$media-desktop: "only screen and (min-width: 640px)" !default;
+$media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" !default;
+$media-tablet: "only screen and (max-width:"$grid-container-width")" !default;
+
+$nav-height: 90px;

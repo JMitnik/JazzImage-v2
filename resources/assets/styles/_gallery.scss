@@ -1,0 +1,124 @@
+/*
+* === Frontpage Gallery ===
+*/
+
+.gallery-section {
+    background: $secondary-color;
+    position: relative;
+    height: 500px;
+
+    .section-content {
+        width: 50%;
+
+        p {
+            font-family: $title-font-family;
+            font-weight: 100;
+            margin-top: $grid-gutter-width;
+            font-size: 18px;
+            line-height: 2;
+        }
+    }
+}
+
+.gallery-block {
+    position: absolute;
+    right: 0;
+    top: $grid-gutter-width;
+    max-width: 50%;
+
+    img {
+        box-shadow: -2px 3px 5px 1px rgba(0,0,0,0.5);
+    }
+}
+
+/*
+* === NGG Album Gallery Style ===
+*/
+
+.ngg-albumoverview {
+    .ngg-album-compact {
+        background: white;
+        text-align: center;
+        font-family: $title-font-family;
+        border-radius: 0 3px 3px 0;
+
+        &:first-of-type {
+            border-radius: 3px 0 0 3px;
+        }
+
+        .ngg-album-compactbox {
+            border: none;
+
+            &:before, &:after {
+                content: none;
+            }
+        }
+    }
+
+    .ngg-album-gallery-image-counter {
+        text-align: center;
+        font-family: $title-font-family
+    }
+
+    .ngg-album-desc {
+        color: $primary-color;
+        text-decoration: none;
+        font-family: $title-font-family;
+    }
+}
+
+.slideshowlink {
+    display: none;
+}
+
+.ngg-gallery-thumbnail-box {
+    width: 33%;
+
+
+    .ngg-gallery-thumbnail {
+        background: $primary-color;
+        border: 1px solid #221d1d;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+.ngg-breadcrumbs {
+    display: flex;
+    align-items: center;
+
+    &, .ngg-breadcrumb a {
+        color: white;
+        font-family: $title-font-family;
+        text-decoration: none;
+    }
+
+    .ngg-breadcrumb:first-of-type {
+        font-size: 22px;
+
+        a {
+            transition: all 0.1s ease-in;
+        }
+
+        &:hover a {
+            color: $secondary-color;
+        }
+    }
+}
+
+.ngg-navigation {
+    &, .page-numbers, .next, .prev {
+        color: white;
+        font-family: $title-font-family;
+        transition: all 0.2s ease-in;
+        padding: 8px;
+    }
+
+    .page-numbers, .next, .prev {
+        &:hover {
+            background: $secondary-color !important;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.section-articles {
+    background: url('../images/article-banner.jpg');
+    height: 450px;
+
+    h3 {
+        text-shadow: -1px 2px 4px black;
+    }
+}
+
+/*
+* === Article Pages ===
+*/
+
+.article-overview {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 600px;
+}
+
+.article-card {
+    text-decoration: none;
+
+    h4 {
+        padding: $grid-gutter-width / 2;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 100;
+        color: white;
+    }
+
+    .article-logo {
+        max-width: 200px;
+        padding: $grid-gutter-width;
+    }
+
+    img {
+        border-radius: 3px;
+        max-width: 100%;
+    }
+
+    &.article-Echo img {
+        background: white;
+        padding: 10px;
+    }
+
+    &.article-Jazz.Kiev .article-logo {
+        background: white !important;
+    }
+}

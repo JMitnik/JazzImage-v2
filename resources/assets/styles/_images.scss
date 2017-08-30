@@ -1,0 +1,10 @@
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.parallax-top {
+        background-position: top;
+    }
+}

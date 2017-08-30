@@ -1,0 +1,66 @@
+p, span {
+    font-family: $body-font-family;
+}
+
+p {
+    margin: 15px;
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    color: $site-type-color;
+    font-family: $title-font-family;
+    margin: 0;
+
+    p, span {
+        font-family: $title-font-family;
+    }
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+.text-light {
+    font-weight: 100;
+}
+
+.text-strong {
+    font-weight: 700;
+}
+
+.text-normal {
+    font-weight: 400;
+}
+
+.page-intro {
+    margin-bottom: 100px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-muted {
+    color: #aaa;
+}
+
+.text-md {
+    font-size: 16px;
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}

@@ -1,0 +1,12 @@
+.section {
+    margin: 50px 0;
+    padding: $grid-gutter-width 0;
+
+    p {
+        margin: 0;
+    }
+
+    &.no-margin {
+        margin: 0;
+    }
+}

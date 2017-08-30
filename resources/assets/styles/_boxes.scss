@@ -1,0 +1,63 @@
+.box {
+    position: relative;
+    padding: $grid-gutter-width;
+    display: inline-block;
+    width: 300px;
+    transition: opacity 0.5s ease-in;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    .box-title {
+        width: 100%;
+        font-family: $title-font-family;
+        font-size: 22px;
+    }
+
+    .box-body {
+        width: 100%;
+    }
+
+    .box-detail {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        color: white;
+        font-family: $title-font-family;
+        font-weight: 100;
+        text-decoration: none;
+        padding: $grid-gutter-width;
+        background: rgba(0,0,0,0.8);
+        transition: transform 0.4s linear 200ms;
+        transform: translateY(100%);
+    }
+
+    &:hover .box-detail {
+        transform: none;
+        transition: transform 0.4s linear 200ms;
+    }
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-dark {
+    background-color: $primary-light-color;
+    border: 1px solid #221D1D;
+    text-align: center;
+    color: white;
+    transition: all 0.2s ease-in;
+
+    img {
+        width: 200px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
