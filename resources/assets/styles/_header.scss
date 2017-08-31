@@ -15,15 +15,28 @@
 
 .header-fp {
     display: flex;
-    height: 100vh;
     width: 100vw;
+
+    @media #{$media-desktop} {
+        height: 100vh;
+    }
+
+    h1 {
+        @media #{$media-mobile} {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
 
     .header-content {
         position: relative;
         margin: 50px 0;
-        left: 10%;
         color: white;
         z-index: 2;
+
+        @media #{$media-desktop} {
+            left: 10%;
+        }
 
         h1 {
             padding-bottom: $grid-gutter-width / 3;

@@ -42,8 +42,17 @@
 }
 
 .box-wrapper {
-    display: flex;
-    justify-content: space-between;
+    @media #{$media-desktop} {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        @media #{$media-mobile} {
+            width: 100%;
+            margin: $grid-gutter-width / 2 0;
+        }
+    }
 }
 
 .box-dark {

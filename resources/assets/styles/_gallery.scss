@@ -72,8 +72,11 @@
 }
 
 .ngg-gallery-thumbnail-box {
-    width: 33%;
+    width: 50%;
 
+    @media #{$media-desktop} {
+        width: 33%;
+    }
 
     .ngg-gallery-thumbnail {
         background: $primary-color;

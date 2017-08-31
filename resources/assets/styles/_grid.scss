@@ -3,9 +3,13 @@ body {
 }
 
 .container {
-    width: $grid-container-width;
     margin: 0 auto;
     padding: 0 $grid-gutter-width / 2;
+    width: 100%;
+
+    @media #{$media-desktop} {
+        width: $grid-container-width;
+    }
 }
 
 .page-wrapper {
