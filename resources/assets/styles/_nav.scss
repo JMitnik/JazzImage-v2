@@ -2,11 +2,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    // margin-top: 50px;
-
-    li {
-        // margin: $grid-gutter-width / 2 0;
-    }
 
     li a {
         font-weight: 100;
@@ -15,10 +10,10 @@
         text-decoration: none;
         color: white;
         transition: all 0.2s ease-in;
+    }
 
-        // &:hover {
-        //     color: $secondary-color;
-        // }
+    @media #{$media-mobile} {
+        display: none;
     }
 }
 
@@ -26,16 +21,22 @@
     position: fixed;
     height: $nav-height;
     background-color: $primary-light-color;
+    z-index: 5;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
     border-bottom: 1px solid #221d1d;
     padding: 0;
 
+    .nav-toggle {
+        position: absolute;
+        right: $grid-gutter-width;
+    }
 
-    .container {
-        padding: 0;
+    @media #{$media-desktop} {
+        .container {
+            padding: 0;
+        }
     }
 
     .header-logo {

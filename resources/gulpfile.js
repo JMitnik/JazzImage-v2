@@ -8,7 +8,9 @@ var uglifycss = require('gulp-uglifycss');
 gulp.task('styles', function () {
  return gulp.src('./assets/styles/main.scss')
    .pipe(sass().on('error', sass.logError))
-   .pipe(autoprefixer())
+   .pipe(autoprefixer({
+      browsers: require('./package.json').browserslist
+   }))
    .pipe(uglifycss())
    .pipe(gulp.dest('../public/wp-content/themes/jazzimage/styles/'));
 });

@@ -19,5 +19,6 @@
 	<div class="container clearfix">
 		<a href="<?=get_home_url();?>" class="header-logo pull-left"></a>
 		<?=wp_nav_menu('header_nav');?>
+		<span class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></span>
 	</div>
 </div>

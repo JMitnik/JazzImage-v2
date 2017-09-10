@@ -28,6 +28,11 @@
         border-top: 1px solid #ddd;
         padding: $grid-gutter-width;
         background: white;
+
+        @media #{$media-mobile} {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     img {

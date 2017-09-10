@@ -5,10 +5,14 @@
 .gallery-section {
     background: $secondary-color;
     position: relative;
-    height: 500px;
+    min-height: 500px;
 
     .section-content {
-        width: 50%;
+        width: 60%;
+
+        @media #{$media-desktop} {
+            width: 50%;
+        }
 
         p {
             font-family: $title-font-family;
@@ -25,6 +29,7 @@
     right: 0;
     top: $grid-gutter-width;
     max-width: 50%;
+    right: -10%;
 
     img {
         box-shadow: -2px 3px 5px 1px rgba(0,0,0,0.5);

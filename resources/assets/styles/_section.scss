@@ -1,6 +1,7 @@
 .section {
     margin: 50px 0;
     padding: $grid-gutter-width 0;
+    overflow: hidden;
 
     p {
         margin: 0;
@@ -8,5 +9,9 @@
 
     &.no-margin {
         margin: 0;
+    }
+
+    .section-heading {
+        margin-bottom: $grid-gutter-width;
     }
 }

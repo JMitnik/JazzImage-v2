@@ -2,11 +2,16 @@
     min-height: 500px;
     width: 100%;
     background: #fff url('../images/arkady.jpg');
-    background-size: cover;
-    background-position: right;
+    background-position: 75% center;
+    background-repeat-y: no-repeat;
+
+    @media #{$media-desktop} {
+        background-size: cover;
+
+    }
 
     .section-title {
-        padding: $grid-gutter-width 0 100px 0;
+        padding: $grid-gutter-width 0;
     }
 
     h3 {
@@ -16,5 +21,9 @@
 
     .section-content, .section-title {
         width: 500px;
+
+        @media #{$media-mobile} {
+            width: 75%;
+        }
     }
 }

@@ -1,24 +1,39 @@
 .header {
     position: relative;
-    margin-top: $nav-height;
 
     > img {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
         max-width: 100%;
-        z-index: 1;
     }
 
+    @media #{$media-desktop} {
+        > img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
 }
 
 .header-fp {
     display: flex;
     width: 100vw;
 
+    @media #{$media-mobile} {
+        margin-top: $nav-height;
+    }
+
     @media #{$media-desktop} {
-        height: 100vh;
+        z-index: 11;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    > img {
+        @media #{$media-mobile} {
+            position: absolute;
+        }
     }
 
     h1 {
@@ -33,9 +48,11 @@
         margin: 50px 0;
         color: white;
         z-index: 2;
+        width: 100%;
 
         @media #{$media-desktop} {
             left: 10%;
+            width: auto;
         }
 
         h1 {
@@ -47,7 +64,6 @@
 
 .header-sequel {
     width: 100%;
-    height: 400px;
     align-items: center;
     overflow: hidden;
     display: flex;
@@ -55,9 +71,25 @@
     justify-content: center;
 
     .header-content {
-        position: relative;
         z-index: 2;
         text-shadow: -1px 2px 4px black;
+
+        @media #{$media-desktop} {
+            position: relative;
+        }
+
+        @media #{$media-mobile} {
+            position: absolute;
+        }
+    }
+
+    @media #{$media-desktop} {
+        height: 400px;
+    }
+
+    @media #{$media-mobile} {
+        margin-top: $nav-height;
+        height: auto;
     }
 }
 

@@ -28,6 +28,10 @@
 .flex-side {
     display: flex;
     justify-content: space-between;
+
+    @media #{$media-mobile} {
+        flex-wrap: wrap;
+    }
 }
 
 .full-center {
@@ -38,4 +42,10 @@
 
 .center {
     margin: 0 auto;
+}
+
+.m-hide {
+    @media #{$media-mobile} {
+        display: none;
+    }
 }

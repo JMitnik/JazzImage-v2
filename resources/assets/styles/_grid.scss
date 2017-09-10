@@ -5,20 +5,28 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 $grid-gutter-width / 2;
-    width: 100%;
+    width: $grid-container-width;
 
-    @media #{$media-desktop} {
-        width: $grid-container-width;
+
+    @media #{$media-mobile} {
+        width: 100%;
+    }
+
+    @media #{$media-tablet} {
+        width: 100%;
     }
 }
 
 .page-wrapper {
     z-index: 2;
     position: relative;
-    margin-top: -100px;
     padding: $grid-gutter-width / 2;
     background-color: $primary-light-color;
     border: 1px solid #221D1D;
+
+    @media #{$media-desktop} {
+        margin-top: -100px;
+    }
 
     .page-intro {
         text-align: center;

@@ -99,7 +99,7 @@ if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query-
 
 ?>
 
-        <div style="width: 400px;" class="exhibition exhibition-vertical exhibition-upcoming">
+        <div class="exhibition exhibition-vertical exhibition-upcoming">
                 <img src="<?=get_field('image');?>"/>
 
                 <div class="exhibition-content">
@@ -158,8 +158,8 @@ if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query-
 <div class="section section-articles no-margin full-center parallax parallax-top">
     <div class="section-content full-center">
         <div class="flex-side">
-            <div class="header-logo"></div>
-            <div style="width: 80%" class="article-text text-light">
+            <div class="header-logo m-hide"></div>
+            <div class="article-text text-light">
                 <h3 class="text-light"><span class="text-secondary">FEATURED</span> IN JOURNALS INCLUDING</h3>
                 <h4 class="text-light mg">Telekritika, Jazz in Kiev, Echo Magazine and More</h4>
                 <a href="" class="btn btn-black btn-fw btn-lg">Read</a>
